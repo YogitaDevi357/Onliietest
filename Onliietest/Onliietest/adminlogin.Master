@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="adminlogin.master.vb" Inherits="Onliietest.adminlogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    
+   
+    <style type="text/css">
+        .style3
+        {
+        }
+        .style4
+        {
+            width: 313px;
+        }
+        .style5
+        {
+            width: 639px;
+        }
+    </style>
+   
+    
+   
+</head>
+<body background="images/back (2).jpg">
+    <form id="form1" runat="server" >
+    <link href="admin.css" rel="stylesheet" type="text/css" /> 
+    <div>
+        <table >
+        <tr>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_vi" runat="server" NavigateUrl="~/viewissue.aspx">View 
+                issue</asp:HyperLink>
+            </td>
+            <td class="cell2 ">
+                <asp:HyperLink ID="hl_addqst" runat="server" NavigateUrl="~/addquestion.aspx">Add 
+                question</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_sei" runat="server" 
+                    NavigateUrl="~/setexaminstruction.aspx">Set exam instruction</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_addsub" runat="server" NavigateUrl="~/addsubject.aspx">Add 
+                subject</asp:HyperLink>
+            </td>
+            <td  class="cell2">
+                <asp:HyperLink ID="hl_du" runat="server" NavigateUrl="~/deleteuser.aspx">Delete 
+                user</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_vm" runat="server" NavigateUrl="~/viewmarks.aspx">View 
+                marks</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_dlqst" runat="server" NavigateUrl="~/editquestion.aspx">Edit 
+                Question</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_rp" runat="server" NavigateUrl="~/resetpassword.aspx">Reset 
+                password</asp:HyperLink>
+            </td>
+            <td class ="cell2">
+       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/mainpage.aspx">LogOut</asp:HyperLink>
+            </td>
+        </tr>
+    
+    </table>
+    <table ><tr><td class="style3" colspan="2">&nbsp;</tr><tr><td class="style5"></td>
+ <td class="style4">
+     &nbsp; <asp:Label ID="user" runat="server" Width="94px" 
+         
+         
+         style="color: #FFFFFF; font-size: x-large; font-style: italic; margin-left: 60px;"></asp:Label></td></tr></table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

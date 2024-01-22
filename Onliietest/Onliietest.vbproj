@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{643AFD76-3F09-4EC4-819D-73C39B43A1C2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Onliietest</RootNamespace>
+    <AssemblyName>Onliietest</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Onliietest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Onliietest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\3.5\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addquestion.aspx.designer.vb">
+      <DependentUpon>addquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addquestion.aspx.vb">
+      <DependentUpon>addquestion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="addsubject.aspx.designer.vb">
+      <DependentUpon>addsubject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addsubject.aspx.vb">
+      <DependentUpon>addsubject.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Master.designer.vb">
+      <DependentUpon>adminlogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.Master.vb">
+      <DependentUpon>adminlogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aspnet.aspx.designer.vb">
+      <DependentUpon>aspnet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet.aspx.vb">
+      <DependentUpon>aspnet.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="cprogramming.aspx.designer.vb">
+      <DependentUpon>cprogramming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cprogramming.aspx.vb">
+      <DependentUpon>cprogramming.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="datastructure.aspx.designer.vb">
+      <DependentUpon>datastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datastructure.aspx.vb">
+      <DependentUpon>datastructure.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="dbms.aspx.designer.vb">
+      <DependentUpon>dbms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dbms.aspx.vb">
+      <DependentUpon>dbms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="demoresult.aspx.designer.vb">
+      <DependentUpon>demoresult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demoresult.aspx.vb">
+      <DependentUpon>demoresult.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="demotest.aspx.designer.vb">
+      <DependentUpon>demotest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demotest.aspx.vb">
+      <DependentUpon>demotest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="editquestion.aspx.designer.vb">
+      <DependentUpon>editquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="editquestion.aspx.vb">
+      <DependentUpon>editquestion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="deleteuser.aspx.designer.vb">
+      <DependentUpon>deleteuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteuser.aspx.vb">
+      <DependentUpon>deleteuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="digital.aspx.designer.vb">
+      <DependentUpon>digital.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="digital.aspx.vb">
+      <DependentUpon>digital.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="forgetpassword.aspx.designer.vb">
+      <DependentUpon>forgetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpassword.aspx.vb">
+      <DependentUpon>forgetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="informationtechnology.aspx.designer.vb">
+      <DependentUpon>informationtechnology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="informationtechnology.aspx.vb">
+      <DependentUpon>informationtechnology.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="internetapplication.aspx.designer.vb">
+      <DependentUpon>internetapplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="internetapplication.aspx.vb">
+      <DependentUpon>internetapplication.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="java.aspx.designer.vb">
+      <DependentUpon>java.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java.aspx.vb">
+      <DependentUpon>java.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mainpage.aspx.designer.vb">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainpage.aspx.vb">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="online.aspx.designer.vb">
+      <DependentUpon>online.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="online.aspx.vb">
+      <DependentUpon>online.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="online.Master.designer.vb">
+      <DependentUpon>online.Master</DependentUpon>
+    </Compile>
+    <Compile Include="online.Master.vb">
+      <DependentUpon>online.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="operatingsystem.aspx.designer.vb">
+      <DependentUpon>operatingsystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="operatingsystem.aspx.vb">
+      <DependentUpon>operatingsystem.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="resetpassword.aspx.designer.vb">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resetpassword.aspx.vb">
+      <DependentUpon>resetpassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="setexaminstruction.aspx.designer.vb">
+      <DependentUpon>setexaminstruction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setexaminstruction.aspx.vb">
+      <DependentUpon>setexaminstruction.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.vb">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.vb">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="unauthorize.aspx.designer.vb">
+      <DependentUpon>unauthorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="unauthorize.aspx.vb">
+      <DependentUpon>unauthorize.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="userhome.aspx.designer.vb">
+      <DependentUpon>userhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userhome.aspx.vb">
+      <DependentUpon>userhome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="viewissue.aspx.designer.vb">
+      <DependentUpon>viewissue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewissue.aspx.vb">
+      <DependentUpon>viewissue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewmarks.aspx.designer.vb">
+      <DependentUpon>viewmarks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewmarks.aspx.vb">
+      <DependentUpon>viewmarks.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="addquestion.aspx" />
+    <Content Include="addsubject.aspx" />
+    <Content Include="App_Data\qbank.mdf">
+    </Content>
+    <Content Include="App_Data\qbank_log.ldf">
+      <DependentUpon>qbank.mdf</DependentUpon>
+    </Content>
+    <Content Include="contactus.aspx" />
+    <Content Include="demoresult.aspx" />
+    <Content Include="demotest.aspx" />
+    <Content Include="editquestion.aspx" />
+    <Content Include="deleteuser.aspx" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\aspnetapp.png" />
+    <Content Include="images\back %282%29.jpg" />
+    <Content Include="images\c.jpg" />
+    <Content Include="images\datastruct.jpg" />
+    <Content Include="images\dbms.png" />
+    <Content Include="images\digitall.png" />
+    <Content Include="images\images.png" />
+    <Content Include="images\img.jpg" />
+    <Content Include="images\infotech.jpg" />
+    <Content Include="images\interapp.jpg" />
+    <Content Include="images\java.jpg" />
+    <Content Include="images\on.jpg" />
+    <Content Include="images\online-test.png" />
+    <Content Include="images\op.jpg" />
+    <Content Include="images\SignUp-Transitioanl-Logo-Large.png" />
+    <Content Include="images\simple-wallpaper-1.jpg" />
+    <Content Include="mainpage.aspx" />
+    <Content Include="admin.css" />
+    <Content Include="adminlogin.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="online.Master" />
+    <Content Include="aspnet.aspx" />
+    <Content Include="cprogramming.aspx" />
+    <Content Include="datastructure.aspx" />
+    <Content Include="dbms.aspx" />
+    <Content Include="digital.aspx" />
+    <Content Include="forgetpassword.aspx" />
+    <Content Include="images\inl.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\test.jpg" />
+    <Content Include="informationtechnology.aspx" />
+    <Content Include="internetapplication.aspx" />
+    <Content Include="java.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="online.aspx" />
+    <Content Include="online.css" />
+    <Content Include="operatingsystem.aspx" />
+    <Content Include="resetpassword.aspx" />
+    <Content Include="setexaminstruction.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="adminhome.aspx" />
+    <Content Include="unauthorize.aspx" />
+    <Content Include="userhome.aspx" />
+    <Content Include="viewissue.aspx" />
+    <Content Include="viewmarks.aspx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49314</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

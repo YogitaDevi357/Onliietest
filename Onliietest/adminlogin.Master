@@ -1,0 +1,103 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="adminlogin.master.vb" Inherits="Onliietest.adminlogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+    
+   
+    <style type="text/css">
+        .style3
+        {
+        }
+        .style4
+        {
+            width: 466px;
+        }
+        .style5
+        {
+            width: 639px;
+        }
+        .style6
+        {
+            width: 319px;
+        }
+        </style>
+   
+    
+   
+</head>
+<body background="images/3.jpg">
+    <form id="form1" runat="server" >
+    <link href="admin.css" rel="stylesheet" type="text/css" /> 
+    <div>
+        <table bgcolor="Red" >
+        <tr>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_vi" runat="server" NavigateUrl="~/viewissue.aspx" 
+                    ForeColor="Black">View 
+                issue</asp:HyperLink>
+            </td>
+            <td class="cell2 ">
+                <asp:HyperLink ID="hl_addqst" runat="server" NavigateUrl="~/addquestion.aspx" 
+                    ForeColor="Black">Add 
+                question</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_sei" runat="server" 
+                    NavigateUrl="~/setexaminstruction.aspx" ForeColor="Black">Set exam instruction</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_addsub" runat="server" NavigateUrl="~/addsubject.aspx" 
+                    ForeColor="Black">Add 
+                subject</asp:HyperLink>
+            </td>
+            <td  class="cell2">
+                <asp:HyperLink ID="hl_du" runat="server" NavigateUrl="~/deleteuser.aspx" 
+                    ForeColor="Black">Delete 
+                user</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_vm" runat="server" NavigateUrl="~/viewmarks.aspx" 
+                    ForeColor="Black">View 
+                marks</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_dlqst" runat="server" NavigateUrl="~/editquestion.aspx" 
+                    ForeColor="Black">Edit 
+                Question</asp:HyperLink>
+            </td>
+            <td class="cell2">
+                <asp:HyperLink ID="hl_rp" runat="server" NavigateUrl="~/resetpassword.aspx" 
+                    ForeColor="Black">Reset 
+                password</asp:HyperLink>
+            </td>
+            <td class ="cell2">
+       <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/mainpage.aspx" 
+                    Font-Italic="False" ForeColor="Black">LogOut</asp:HyperLink>
+            </td>
+        </tr>
+    
+    </table>
+    <table ><tr><td class="style3" colspan="3">&nbsp;</tr><tr><td class="style5"></td>
+ <td class="style6">
+     &nbsp;&nbsp;&nbsp; </td>
+ <td class="style4">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <asp:Label ID="user" runat="server" Width="240px" 
+         
+         
+         
+         style="color: #000000; font-size: xx-large; font-style: italic; margin-left: 60px; font-family: 'Bell MT'; margin-bottom: 0px;" 
+         ForeColor="Black"></asp:Label></td></tr></table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

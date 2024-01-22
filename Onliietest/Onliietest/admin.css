@@ -1,0 +1,30 @@
+﻿body 
+{
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.cell
+{
+	width: 200px;
+	font-family:@MS PMincho;
+	font-size:x-large;
+}
+.tab
+{ 
+	font-family:@GulimChe;
+	font-size :large ;
+	
+	}
+	.cell2
+	{
+		background-color : Orange ;
+		border :2px,yellow;
+		font-family :@Microsoft JhengHei;
+		font-size: x-large;  
+		text-align :center ;
+	}
+	

@@ -1,0 +1,87 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="online.master.vb" Inherits="Onliietest.online2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #footer
+        {
+            width: 1103px;
+        }
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 556px;
+        }
+        .style3
+        {
+            font-family: "Monotype Corsiva";
+            font-size: xx-large;
+            font-style: italic;
+            color: #9900FF;
+            font-weight: bold;
+        }
+        .style4
+        {
+            height: 13px;
+        }
+    </style>
+</head>
+<body  background="images/simple-wallpaper-1.jpg">
+    <link href="online.css" rel="stylesheet" type="text/css" />
+<form id="form1" runat="server">
+
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+      
+      <div id="lefthead" style="width: 300px;  float: left">
+        <asp:Image ID="Image1" runat="server" Height="172px" Width="300px" 
+            ImageUrl="~/images/test.jpg" />
+    </div>
+    <div id="righthead"  style="width: 695px; margin-left: 303px; ">
+     <marquee style="width: 797px"><asp:Image ID="Image2" runat="server" Height="172px" 
+            ImageUrl="images/online-test.png" Width="270px"/></marquee>
+                
+    </div>
+    
+    <div id="menu" style="clear: both" >
+    
+        <asp:Menu ID="Menu1" runat="server" Font-Bold="False" Font-Names="Cambria" 
+            Font-Size="XX-Large" Font-Underline="False" ForeColor="#0066FF" Height="20px" 
+            Orientation="Horizontal" Width="611px" Font-Italic="True">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/mainpage.aspx" Text="Home" Value="Home">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/contactus.aspx" Text="Contact Us" 
+                    Value="Contact Us"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/signup.aspx" Text="Sign Up" Value="Sign Up">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>            
+            
+        
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer" style="clear: both" >  
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    PREPARED BY : YOGITA &amp; VARSHA</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

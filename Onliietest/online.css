@@ -1,0 +1,23 @@
+﻿body 
+{
+	width: 1000px;
+ margin-left : auto ;
+ margin-right : auto;
+ background-image: D:\Project\Onliietest\Onliietest\images\java.jpg;
+ 
+	
+}
+
+.cell
+{
+	width: 200px;
+	font-family:@MS PMincho;
+	font-size:x-large;
+}
+.tab
+{
+	  font-family: Arial;
+            font-size: large;
+            font-weight: bold;
+            width: 142px;
+}
